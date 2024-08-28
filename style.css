@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:wght@200;300;400;500;600; 700;800;900&display=swap");
+
+:root{
+    --themeRed: #e43a47;
+    --gray:#efefef;
+    --voilet:#3a7ee4;
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+button, body {
+     font-family: "Poppins", sans-serif;
+}
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+p {
+   font-size: 14px;
+   Line-height: 26px;
+}
+
+.fullContainer {
+   width: 100%; 
+   
+}
+
+.container {
+   width: 1140px;
+   margin: auto;
+}
+
+.sectionTitle{
+   width: 500px;
+   border-bottom:5px solid var(--voilet);
+   text-align: center;
+   font-size: 2rem;
+   font-weight: 200;
+   margin: 0 auto 50px;
+   position: relative;
+   padding: 10px 0;
+   margin-top: 100px;
+   
+}
+
+header{
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.6);
+   position: fixed;
+   z-index: 2;
+ }
+
+header .container {
+   display: flex;
+   justify-content: space-between;
+}
+
+section{
+   padding: 10px 0;
+}
+header .container .logo {
+   padding: 15px 0;
+   height: 75px;
+   margin-left: -50px;
+}
+
+header .container .logo h3{
+    color: #efefef;
+    float: right;
+    padding-left: 8px;
+    padding-top: 20px;
+}
+
+header .container .logo img{
+   height: 50px;
+}
+
+header nav ul { 
+   List-style-type: none;
+}
+
+header nav ul li {
+   display: inline-block;
+}
+
+header nav ul li a {
+   display: inline-block;
+   height: 75px;
+   Line-height: 75px;
+   padding: 0 15px;
+   text-decoration: none;
+   text-transform: capitalize;
+   font-size: 16px;
+   color:#fff;
+   transition: 0.5s;
+}
+
+button a{
+   text-decoration: none;
+   color: #000;
+}
+
+header nav ul li a:hover {
+   background-color:var(--voilet);
+   border-radius: 10px;     
+}
+
+.banner {
+   min-height: 100vh;
+   width: 100%;
+   background-image: url("../image/gallery/banner1.png");
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.banner .content h1{
+    margin-top: 240px;
+    display: inline-block;
+    color: #f5f4f4;
+    font-size: 5.5rem;
+    text-shadow: 0 0 5px #000;
+    font-weight: 100;
+    width: 70%;
+    line-height: 6rem; 
+}
+
+.banner .content h1 span { 
+    background-color: var(--voilet);
+    display: inline-block;
+    Line-height: 4.8rem;
+    padding: 0 20px;
+    font-weight: 600;
+    border-radius: 7px;
+ }
+
+ .banner .content p {
+    color:#f8f5f6;
+    width: 50%;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-shadow: 0 0 2px #000;
+    margin-top: 15px;
+ }
+ 
+ .banner .content{
+    margin-left: 150px;
+ }
+ .banner .content h2{
+    display: inline-block;
+    color: var(--voilet);
+    font-size: 4rem;
+    text-shadow: 0 0 5px #000;
+    font-weight: 100;
+    width: 70%;
+    line-height: 6rem;
+ }
+ .banner .content pre{
+    color:white;
+    font-size: 2rem;
+    margin-top: 10px;
+ }
+
+ #aboutsection .card{
+   display: flex;
+   float: right;
+   padding: 15px;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   margin-top: 50px;
+   margin-bottom: 300px;
+   position: relative;
+   height: 250px;
+}
+
+.para{
+   font-size:17px;
+}
+ #aboutsection .card > div{
+   width: 350px;
+   background-color: var(--gray);
+   padding: 35px;
+   color: #4444;
+   text-align: center;
+   border-radius: 5px;
+   height: 335px;
+   border: 2px solid #ddd9d9;
+   transition: 0.2s;
+ }
+
+ #aboutsection .card > div:hover{
+   width: 340px;
+   margin-top: -30px;
+   border-color: var(--voilet);
+   padding: 40px;
+   height: auto;
+   border-radius: 30px;
+ }
+ #aboutsection .card > div .title{
+   font-size: 20px;
+   font-weight: 600;
+   text-transform: uppercase;
+   color: black;
+
+ }
+ #aboutsection .card > div p{
+   font-size: 15px;
+   margin-top: 15px;
+   color: #000;
+ }
+ #aboutsection .card > div button{
+   padding: 10px 15px;
+   margin-top: 60px;
+   background-color: rgb(75, 143, 233);
+   border: 2px color(black);
+   font-size: 15px;
+   font-size: larger ;
+   border-radius: 10px;
+   cursor: pointer;
+ }
+   
+
+.fullcontainer{
+   background-color: rgb(245, 236, 227);
+   height: 1000px;
+ }
+
+
+
+ <!-----------------------------program section start ------------------------>
+
+.programs {
+   background-color: whitesmoke;
+}
+   
+.programs .boxContainer {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   grid-gap: 50px;  
+}
+
+.programTitle{
+   margin-top: 15px;
+}
+.programs .boxContainer .box {
+   background-color: #e2e2e2;
+   text-align: center;
+   padding-bottom: 40px;
+   border-radius: 10px;
+   box-shadow: 0 0 3px 0 #c5c5c5;
+   position: relative;
+   margin-bottom: 15px;
+   width: 80%;
+   margin-left: 100px;
+}
+
+.programs .boxContainer .box .cardImage {
+   width: 100%;
+   height: 370px;
+   background-position: center;
+   background-size: cover;
+   content: "";
+   position: relative;
+   overflow: hidden;
+   border-radius: 5px 5px 0 0;
+}
+
+.programs .boxContainer .box .cardImage:after {
+   width: 100%;
+   height: 100%;
+   background-position: center;
+   background-size: cover;
+   content: "";
+   position: absolute;
+   left: 0;
+   right: 0;
+   filter: grayscale(100%);
+   transition: 0.4s;
+}
+
+.programs .boxContainer .box:nth-child(1) .cardImage,
+.programs .boxContainer .box:nth-child(1) .cardImage:after {
+    background-image: url("../image/gallery/education.png");
+}
+
+
+.programs .boxContainer .box:nth-child(2) .cardImage,
+.programs .boxContainer .box:nth-child(2) .cardImage:after {
+    background-image: url("../image/gallery/clothes.png");
+}
+
+
+.programs .boxContainer .box:nth-child(3) .cardImage,
+.programs .boxContainer .box:nth-child(3) .cardImage:after {
+    background-image: url("../image/gallery/fooddonate.png");
+}
+
+
+.programs .boxContainer .box:nth-child(4) .cardImage,
+.programs .boxContainer .box:nth-child(4) .cardImage:after {
+    background-image: url("../image/gallery/helping.png");
+}
+
+
+.donationCount span{
+   color: #e43a47;
+}
+
+.boxContainer button{
+   margin-top: 10px;
+   background-color: var(--voilet);
+   height: 40px;
+   width: 20%;
+   border-radius: 8px;
+}
+
+
+
+/*-----------------------------program section ends ------------------------*/
+
+
+.galleryBox{
+   background-color:rgb(245, 236, 227) ;
+   height: 1250px;
+}
+
+
+.gallery .galleryContainer{
+   column-count: 3;
+   column-gap: 20px;
+}
+
+.gallery .galleryContainer .item{
+   position: relative;
+   margin-bottom: 10px;
+   overflow: hidden;   
+}
+
+.gallery .galleryContainer img{
+   width: 100%;
+   display: block;
+}
+
+.gallery .galleryContainer .title {
+   position: absolute;
+   background-color: var(--gray);
+   padding: 5px;
+   margin: 5px;
+   border-radius: 5px;
+   font-size: 13px;
+   font-weight: bold;
+   opacity: 0;
+   z-index: 1;
+   transition: 0.4s;
+}
+
+.gallery .galleryContainer .item .title{
+   opacity: 1;
+}
+
+
+.gallery .galleryContainer .item:hover img{
+   transform: scale(1.2);
+}
+
+
+
+
+.join{
+   background-color: var(--voilet);
+   color: white;
+   margin-top: 400px;
+}
+
+.join .joinTitle{
+   font-size: 40px;
+   font-weight: 100;
+}
+
+.join .joinTitle span{
+   font-weight: 800;
+   color: var(--themeRed);
+}
+
+.join button{
+   padding: 7px 15px;
+   margin-top: 20px;
+   border: 0;
+   outline: none;
+   font-weight: 600;
+   font-size: 16px;
+   margin-bottom: 30px;
+}
+
+.join button.Btn{
+   background-color: black;
+   color: #ddd9d9;
+   margin-right: 20px;
+}
+
+.newsLetterContainer img{
+   height: 75px ;
+   width: 75px;
+   margin-top: 20px;
+}
+
+footer{
+   background-color: #000;
+   color: white;
+   padding: 50px 0;
+   font-size: 14px;
+}
+
+
+footer .container{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+   grid-gap: 80px;
+}
+
+footer .title{
+   font-size: 20px;
+   font-weight: 600;
+   text-transform: uppercase;
+   border-bottom: 2px solid;
+   margin-bottom: 30px;
+   padding: 0 0 5px 0;
+}
+
+footer p{
+   margin-bottom: 15px;
+}
+
+
+footer .linkContainer ul{
+   list-style-type: none;
+}
+
+
+span.charity{
+   font-style: italic;
+   font-size: larger;
+   color: #f30518;
+}
+footer .linkContainer ul li a{
+   text-decoration: none;
+   color: white;
+   margin-bottom: 20px;
+   display: inline-block;
+}
+
+footer .newsLetterContainer input{
+   background-color: transparent;
+   border: 1px solid white;
+   outline: none;
+   padding: 10px 15px;
+   width: 100%;
+   margin-top: 10px;
+   color: #efefef;
+   border-radius: 30px;
+}
+
